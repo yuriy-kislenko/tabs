@@ -1,0 +1,75 @@
+.tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tabs__header {
+    border: 1px solid #cecccc;
+    padding: 20px;
+    border-radius: 3px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.tabs__content {
+    width: 100%;
+    text-align: center;
+    padding: 20px 20px;
+    border: 1px solid #cecccc;
+    border-top: none;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.tabs__item {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    display: none;
+}
+
+.items {
+    display: flex;
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+
+.item {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.item:last-child {
+    margin-right: 0;
+}
+
+.active-content {
+    display: block;
+}
+
+.active-button {
+    background: black;
+    color: white;
+}
+
+.create-item {
+    margin-left: 10px;
+}
+
+.create-item input,
+.create-todo input {
+    border: 1px solid black;
+    height: 34px;
+}
